@@ -1,6 +1,6 @@
 import React, {useCallback, useRef} from "react";
 
-const UseDebounce = (callback, delay) => {
+const useDebounce = (callback, delay) => {
     const timer = useRef();
 
     return useCallback((...args) => {
@@ -17,4 +17,4 @@ const UseDebounce = (callback, delay) => {
 
 };
 
-export default UseDebounce;
+export default useDebounce;

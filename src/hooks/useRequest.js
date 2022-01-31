@@ -16,7 +16,7 @@ const useRequest = (request) => {
 
     }, []);
 
-    return [data, loading, error]
+    return [data, loading, error];
 
 };
 

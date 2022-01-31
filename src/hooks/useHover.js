@@ -22,7 +22,7 @@ const useHover = (ref) => {
             node.removeEventListener("mouseenter", on);
             node.removeEventListener("mousemove", on);
             node.removeEventListener("mouseleave", off);
-        }
+        };
 
     }, []);
 

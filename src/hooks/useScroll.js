@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from "react";
 
 
-const UseScroll = (parentRef, childRef, callback) => {
+const useScroll = (parentRef, childRef, callback) => {
     const observer = useRef();
 
     useEffect(() => {
@@ -18,7 +18,6 @@ const UseScroll = (parentRef, childRef, callback) => {
             }
         }, options);
 
-
         observer.current.observe(childRef.current);
 
         return () => {
@@ -27,4 +26,4 @@ const UseScroll = (parentRef, childRef, callback) => {
     }, [callback]);
 };
 
-export default UseScroll;
+export default useScroll;

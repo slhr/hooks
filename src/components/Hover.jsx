@@ -6,8 +6,7 @@ const Hover = () => {
     const isHovering = useHover(ref);
 
     return (
-        <div ref={ref} style={{width: 300, height: 300,  background: isHovering ? "blue" : "red"}}>
-
+        <div ref={ref} style={{width: 300, height: 300, background: isHovering ? "blue" : "red"}}>
         </div>
     );
 };
